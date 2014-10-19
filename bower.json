@@ -1,0 +1,30 @@
+{
+    "name": "Droppin Bars",
+    "dependencies": {
+        "jquery": "~1.11.1"
+    },
+    "version": "0.0.1",
+    "homepage": "https://github.com/antoniocapelo/dropppin-bars",
+    "authors": [
+        "Antonio Capelo <https://github.com/antoniocapelo/>"
+    ],
+    "description": "Simple CSS Responsive Grid. Word.",
+    "main": ["dist/css/bars.scss",
+        "dist/css/bars.css"
+    ],
+    "keywords": [
+        "css",
+        "responsive",
+        "grid",
+        "mobile",
+        "bars"
+    ],
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ]
+}
