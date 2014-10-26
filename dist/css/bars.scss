@@ -1,5 +1,4 @@
 /**
- * Bars CSS
  * Droppin' Bars - A Simple CSS Responsive Grid 
  * by @antoniocapelo.
  */
@@ -21,19 +20,6 @@
     max-width : 960px; 
     text-rendering: optimizespeed /* emphasizes rendering speed over legibility and geometric precision */
 }
-
-// /* Bar Class selector */
-// [class*='bar-'] {
-//   float: left;
-//   min-height: 1px; /* avoid stacking of columns when one is empty*/
-//   padding: 10px;
-// }
-
-// /* Floating last ".bar-" to the right */
-// [class^='bar-']:last-of-type {
-//   padding-right: 0;
-//   /*float: right;*/
-// }
 
 %bar-behaviour {
   float: left;
@@ -128,7 +114,7 @@ $desktop-break     : 960px      ;
   }
 
   /* Resizing main */
-  .bar-1, .bar-2, .bar-3, .bar-4, .bar-5, .bar-6, .bar-7, .bar-8, .bar-9, .bar-10, .bar-11 {
+  .bar-1, .bar-2, .bar-3, .bar-4, .bar-5, .bar-6, .bar-7, .bar-8, .bar-9, .bar-10, .bar-11, .bar-12 {
     width: 100%; @extend %bar-behaviour-mobile;
   }
 
