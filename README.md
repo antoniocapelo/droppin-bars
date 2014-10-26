@@ -6,6 +6,15 @@ Simple CSS Responsive Grid. Word.
 ##Demo
 Czech it [here](http://blog.antoniocapelo.com/droppin-bars/).
 
+## Hooking Up
+
+Just clone this repository or do ``bower install droppin-bars`` for some flow on your website.
+
+If you're using [wiredep](https://github.com/taptapship/wiredep) don't forget to add the following lines on the SCSS files where you want to include the dependency and configure wiredep properly:
+
+	// bower:scss
+	// endbower
+
 ## Usage
 
 ### General
