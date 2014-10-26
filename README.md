@@ -4,7 +4,7 @@ Droppin' Bars
 Simple CSS Responsive Grid. Word.
 
 ##Demo
-Czech it [here](oka).
+Czech it [here](http://blog.antoniocapelo.com/droppin-bars/).
 
 ## Usage
 

@@ -10,3 +10,4 @@ dist/aux
 dist/*.txt
 dist/index.html
 Gruntfile.js
+droppin-bars.sublime-project
