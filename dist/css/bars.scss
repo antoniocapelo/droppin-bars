@@ -83,7 +83,8 @@ $desktop-break     : 960px      ;
 
 
 /* Tablet */
-@media (min-width: $tablet-break) and (max-width: $desktop-break) {
+@media screen and (min-device-width: $tablet-break) and (max-device-width: $desktop-break), 
+(min-width: $tablet-break) and (max-width: $desktop-break) {
 
   .bars-container {
       max-width: 725px;
@@ -99,7 +100,7 @@ $desktop-break     : 960px      ;
 }
 
 /* Mobile */
-@media (max-width: $mobile-break) {
+@media screen and (max-device-width: $mobile-break), (max-width: $mobile-break) {
 
   .bars-container {
       max-width: 724px;
