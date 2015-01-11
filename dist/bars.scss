@@ -14,6 +14,7 @@
           box-sizing: border-box;
 }
 
+/* In case we use a container */
 .bars-container {
     width : 100%;
     margin: 0 auto;
@@ -21,23 +22,9 @@
     text-rendering: optimizespeed /* emphasizes rendering speed over legibility and geometric precision */
 }
 
-%bar-behaviour {
-  float: left;
-  min-height: 1px; /* avoid stacking of columns when one is empty*/
-  padding: 10px;
-
-  &:last-of-type {
-    padding-right: 0;
-  }
-}
-
-%bar-behaviour-mobile {
-  &:last-of-type {
-    padding-right: 10px;
-  }
-}
- 
 /* Clearfixes */
+.row:before,
+.row:after,
 .drop:before,
 .drop:after {
   content: "";
@@ -45,19 +32,29 @@
   clear: both;
 }
 
+/* Standard bar behaviours */
+%bar-behaviour {
+  float: left;
+  min-height: 1px; /* avoid stacking of columns when one is empty*/
+  padding: 10px;
+} 
+
 /* Main Widths */
-.bar-1  {width: 8.33333%; @extend %bar-behaviour; }
-.bar-2  {width: 16.66667%; @extend %bar-behaviour; }
-.bar-3  {width: 25%; @extend %bar-behaviour; }
-.bar-4  {width: 33.33333%; @extend %bar-behaviour; }
-.bar-5  {width: 41.66667%; @extend %bar-behaviour; }
-.bar-6  {width: 50%; @extend %bar-behaviour; }
-.bar-7  {width: 58.33333%; @extend %bar-behaviour; }
-.bar-8  {width: 66.66667%; @extend %bar-behaviour; }
-.bar-9  {width: 75%; @extend %bar-behaviour; }
-.bar-10 {width: 83.33333%; @extend %bar-behaviour; }
-.bar-11 {width: 91.66667%; @extend %bar-behaviour; }
-.bar-12 {width: 100%; @extend %bar-behaviour; }
+.bar-1, .bar-1-desktop    {width: 8.33333%; @extend %bar-behaviour; }
+.bar-2, .bar-2-desktop    {width: 16.66667%; @extend %bar-behaviour; }
+.bar-3, .bar-3-desktop    {width: 25%; @extend %bar-behaviour; }
+.bar-4, .bar-4-desktop    {width: 33.33333%; @extend %bar-behaviour; }
+.bar-5, .bar-5-desktop    {width: 41.66667%; @extend %bar-behaviour; }
+.bar-6, .bar-6-desktop    {width: 50%; @extend %bar-behaviour; }
+.bar-7, .bar-7-desktop    {width: 58.33333%; @extend %bar-behaviour; }
+.bar-8, .bar-8-desktop    {width: 66.66667%; @extend %bar-behaviour; }
+.bar-9, .bar-9-desktop    {width: 75%; @extend %bar-behaviour; }
+.bar-10, .bar-10-desktop  {width: 83.33333%; @extend %bar-behaviour; }
+.bar-11, .bar-11-desktop  {width: 91.66667%; @extend %bar-behaviour; }
+.bar-12, .bar-112-desktop {width: 100%; @extend %bar-behaviour; }
+
+/*Note: bar-# classes are resized to 100% on mobile viewports.
+ * For not resizing the element, use the bar-#desktop-class */
 
 .hide-desktop {
   display: none;
@@ -81,6 +78,7 @@ $mobile-break      : 724px;
 $tablet-break      : $mobile-break + 1px;
 $desktop-break     : 960px      ;
 
+/*-------------------------*/
 
 /* Tablet */
 @media screen and (min-device-width: $tablet-break) and (max-device-width: $desktop-break), 
@@ -116,7 +114,7 @@ $desktop-break     : 960px      ;
 
   /* Resizing main */
   .bar-1, .bar-2, .bar-3, .bar-4, .bar-5, .bar-6, .bar-7, .bar-8, .bar-9, .bar-10, .bar-11, .bar-12 {
-    width: 100%; @extend %bar-behaviour-mobile;
+    width: 100%;
   }
 
   .bar-1-mobile  { width: 8.33333%;  }

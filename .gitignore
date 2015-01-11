@@ -3,11 +3,8 @@ node_modules
 .sass-cache
 bower_components
 app
-package.json
-test
 dist/*.ico
 dist/aux
 dist/*.txt
 dist/index.html
-Gruntfile.js
 droppin-bars.sublime-workspace
